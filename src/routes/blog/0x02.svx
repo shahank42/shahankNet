@@ -1,7 +1,0 @@
----
-# frontmatter goes here
----
-
-# the third post
-
-do i really need to repeat myself?

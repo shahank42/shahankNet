@@ -1,7 +1,0 @@
----
-# frontmatter goes here
----
-
-# the zero-eth post
-
-seems kinda nice

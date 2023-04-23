@@ -1,7 +1,0 @@
----
-# frontmatter goes here
----
-
-# the first post
-
-seems kinda nice too
