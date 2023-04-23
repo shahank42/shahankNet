@@ -1,0 +1,8 @@
+/* Code blocks */
+pre[class*='language-'] {
+	overflow: auto;
+	height: 40rem;
+	width: 90vw;
+	min-width: 20rem;
+	max-width: 48rem;
+}
