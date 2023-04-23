@@ -19,9 +19,11 @@
 					<button
 						id="dropdownProject"
 						data-dropdown-toggle="dropdown-project"
-						class="inline-flex items-center rounded-lg bg-gray-800 px-4 py-2.5 text-center text-2xl font-normal text-white"
-						>shahankNet</button
+						class="inline-flex items-center rounded-lg bg-neutral-900 px-4 py-2.5 text-center text-2xl font-normal text-white"
+						disabled
 					>
+						shahankNet
+					</button>
 				</div>
 			</li>
 
@@ -32,7 +34,7 @@
 					<button
 						id="dropdownDefaultButton"
 						data-dropdown-toggle="dropdown"
-						class="inline-flex items-center rounded-lg bg-gray-800 px-4 py-2.5 text-center text-2xl font-medium text-white hover:bg-gray-700 focus:outline-none"
+						class="inline-flex items-center rounded-lg bg-neutral-900 px-4 py-2.5 text-center text-2xl font-medium text-white hover:bg-neutral-700 focus:outline-none"
 						type="button"
 						on:click={toggleNavMenu}
 					>
@@ -57,16 +59,17 @@
 					<div
 						id="dropdown"
 						class="fixed z-10 mt-2 {navMenuShown &&
-							'hidden'} divide-y divide-gray-100 rounded-lg bg-gray-700 shadow"
+							'hidden'} divide-y divide-gray-100 rounded-lg bg-neutral-700 shadow"
 					>
 						<ul class="py-2 text-sm text-gray-200" aria-labelledby="dropdownDefaultButton">
 							{#each pages as pageName}
 								<li>
 									<a
 										href="/{pageName}"
-										class="block px-4 py-2 text-2xl hover:bg-gray-600 hover:text-white"
-										>{pageName}</a
+										class="block px-4 py-2 text-2xl hover:bg-neutral-600 hover:text-white"
 									>
+										{pageName}
+									</a>
 								</li>
 							{/each}
 						</ul>
