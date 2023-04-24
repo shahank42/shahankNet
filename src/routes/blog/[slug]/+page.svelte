@@ -19,7 +19,7 @@
 
 	<div class="flex flex-row space-x-5 flex-wrap justify-center">
 		{#each tagsList as tag}
-			<span class="bg-green-600 rounded-full px-4 py-1 mt-4 text-sm">
+			<span class="bg-green-600 font-ubuntu-mono rounded-full px-4 py-1 mt-4 text-sm">
 				{tag}
 			</span>
 		{/each}
