@@ -8,6 +8,6 @@
 	};
 </script>
 
-<div class="left-0 top-0 z-20 w-full bg-neutral-800 pr-6 pt-16 md:pt-20 pb-3 md:pb-5">
+<div class="left-0 top-0 z-20 flex-1 w-full bg-neutral-800 pr-6 pt-16 md:pt-20 pb-3 md:pb-5">
 	<BreadcrumbNav pages={['blog', 'portfolio', 'projects']} />
 </div>

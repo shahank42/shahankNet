@@ -3,7 +3,7 @@
 	import Navbar from '../components/layout-components/navbar/navbar.svelte';
 </script>
 
-<header>
+<header class="flex">
 	<Navbar />
 </header>
 

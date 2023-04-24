@@ -25,7 +25,7 @@
 
 <div class="flex w-full flex-col items-center">
 	<nav class="flex justify-between" aria-label="Breadcrumb">
-		<ol class="mb-3 inline-flex items-center flex-wrap justify-center">
+		<ol class="mb-3 flex items-center flex-wrap justify-center">
 			<span class="font-ubuntu-mono mx-2 text-2xl text-gray-400">~/</span>
 
 			<li>

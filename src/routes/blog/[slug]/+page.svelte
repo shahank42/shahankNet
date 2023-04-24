@@ -5,7 +5,7 @@
 </script>
 
 <article
-	class="prose-xl prose-neutral prose-ul:list-disc prose-img:mx-auto text-white p-4 pt-14 md:pt-16 max-w-none"
+	class="prose-xl prose-neutral prose-ul:list-disc prose-ol:list-decimal prose-img:mx-auto text-white p-3 pt-14 md:pt-16"
 >
 	<h1 class="font-ubuntu-mono text-center font-bold">{title}</h1>
 	<h3 class="font-ubuntu-mono text-center text-neutral-200">{subtitle}</h3>
@@ -15,7 +15,7 @@
 		<p class="text-center font-ubuntu-mono text-sm">updated_on: {date_updated}</p>
 	</div>
 	{#if cover_image !== ''}
-		<img src={cover_image} />
+		<img src={cover_image} alt="Cover Image" />
 	{/if}
 	<div class="flex flex-col line-numbers font-ubuntu-mono mt-20">
 		<Content />
