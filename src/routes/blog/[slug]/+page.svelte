@@ -1,13 +1,22 @@
 <script lang="ts">
 	export let data;
-	const { Content, title, date } = data;
+	const { Content, title, subtitle, cover_image, date_published, date_updated, description, tags } =
+		data;
 </script>
 
 <article
-	class="prose-lg md:prose-xl prose-neutral prose-ul:list-disc prose-img:mx-auto text-white p-4 pt-16 max-w-none"
+	class="prose-xl prose-neutral prose-ul:list-disc prose-img:mx-auto text-white p-4 pt-14 md:pt-16 max-w-none"
 >
 	<h1 class="font-ubuntu-mono text-center font-bold">{title}</h1>
-	<p class="text-center font-ubuntu-mono">Published on: {date}</p>
+	<h3 class="font-ubuntu-mono text-center text-neutral-200">{subtitle}</h3>
+	<div class="flex flex-col md:flex-row not-prose mt-10 mb-14 md:mt-14">
+		<p class="text-center font-ubuntu-mono text-sm">published_on: {date_published}</p>
+		<span class="flex-grow" />
+		<p class="text-center font-ubuntu-mono text-sm">updated_on: {date_updated}</p>
+	</div>
+	{#if cover_image !== ''}
+		<img src={cover_image} />
+	{/if}
 	<div class="flex flex-col line-numbers font-ubuntu-mono mt-20">
 		<Content />
 	</div>
