@@ -30,7 +30,7 @@
 
 			<li>
 				<div class="flex items-center">
-					<a href="/">
+					<a href="/" target="_self">
 						<button
 							id="dropdownProject"
 							data-dropdown-toggle="dropdown-project"
@@ -47,7 +47,7 @@
 			{#if thirdComponent}
 				<li>
 					<div class="flex items-center mt-3">
-						<a href={`../${secondComponent}`}>
+						<a href={`../${secondComponent}`} target="_self">
 							<button
 								id="dropdownProject"
 								data-dropdown-toggle="dropdown-project"
@@ -152,6 +152,7 @@
 									<li>
 										<a
 											href="/{pageName}"
+											target="_self"
 											class="font-ubuntu-mono block px-4 py-2 text-xl md:text-2xl {pageName ==
 											secondComponent
 												? 'bg-blue-700'
